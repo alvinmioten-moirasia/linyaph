@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 
-	<html lang="en-PH">
+	<html lang="en">
 
 		<head>
 		
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 			
-			<!-- Cascading Style Sheet (CSS) -->
+			<!-- Cascading Styke Sheet (CSS) -->
 			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-			<link href="assets/theme.css" rel="stylesheet">
-			<style>
+			<link href="../../assets/css/theme.css" rel="stylesheet">
 			
-			#calltoaction{
+			<style>
+			#enterprise-cta{
 	background-color: rgba(30,136,229 ,1);
 }
 
 #footer{
 	background-color: rgba(66,66,66 ,1);
+}
+
+
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
 }
 
 
@@ -43,11 +50,13 @@
 
 
 
+/* Container - Horizontal - 90px */
 .gl-c-h-a-lr{
 	padding-left: 90px;
 	padding-right: 90px;
 }
 
+/* Container - Vertical - 90px */
 .gl-c-v-a-tb{
 	padding-top: 45px;
 	padding-bottom: 45px;
@@ -61,29 +70,102 @@
 	padding-bottom: 45px;
 }
 
+/* Container - Vertical - 60px */
+.gl-c-v-b-tb{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
 .gl-c-v-b-t{
-	padding-top: 15px;
+	padding-top: 30px;
 }
 
 .gl-c-v-b-b{
+	padding-bottom: 30px;
+}
+
+/* Container - Vertical - 30px */
+.gl-c-v-c-tb{
+	padding-top: 15px;
 	padding-bottom: 15px;
 }
 
 .gl-c-v-c-t{
-	padding-top: 7.5px;
+	padding-top: 15px;
 }
 
 .gl-c-v-c-b{
-	padding-bottom: 7.5px;
+	padding-bottom: 15px;
+}
 
+/* Container - Vertical - 15px */
+.gl-c-v-d-tb{
+	padding-top: 7.5px;
+	padding-bottom: 7.5px;
 }
 
 .gl-c-v-d-t{
-	padding-top: 2.5px;
+	padding-top: 7.5px;
 }
 
 .gl-c-v-d-b{
+	padding-bottom: 7.5px;
+}
+
+/* Container - Vertical - 5px */
+.gl-c-v-e-tb{
+	padding-top: 2.5px;
 	padding-bottom: 2.5px;
+}
+
+.gl-c-v-e-tb{
+	padding-top: 2.5px;
+}
+
+.gl-c-v-e-tb{
+	padding-bottom: 2.5px;
+}
+
+
+
+
+.gl-t-a-l{
+	text-align: left;
+}
+
+.gl-t-a-c{
+	text-align: center;
+}
+
+.gl-t-a-r{
+	text-align: right;
+}
+
+.gl-t-a-j{
+	text-align: justify;
+}
+
+
+
+
+.gl-t-c-a{
+	color: rgba(245,245,245 ,1);
+}
+
+.gl-t-c-b{
+	color: rgba(66,66,66 ,1);
+}
+
+.gl-t-c-c{
+	color: rgba(229,57,53 ,1);
+}
+
+.gl-t-c-d{
+	color: rgba(67,160,71 ,1);
+}
+
+.gl-t-c-e{
+	color: rgba(30,136,229 ,1);
 }
 
 
@@ -92,7 +174,7 @@
 .gl-f-a-a{
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
-	font-weight: 600;
+	font-weight: 400;
 	
 	line-height: 15px;
 }
@@ -100,7 +182,7 @@
 .gl-f-a-b{
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
-	font-weight: 400;
+	font-weight: 600;
 	
 	line-height: 15px;
 }
@@ -115,21 +197,13 @@
 
 .gl-f-a-d{
 	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
-	font-weight: 500;
-	
-	line-height: 20px;
-}
-
-.gl-f-a-e{
-	font-family: 'Roboto', sans-serif;
 	font-size: 30px;
 	font-weight: 500;
 	
 	line-height: 30px;
 }
 
-.gl-f-a-f{
+.gl-f-a-e{
 	font-family: 'Roboto', sans-serif;
 	font-size: 45px;
 	font-weight: 500;
@@ -140,204 +214,237 @@
 
 
 
-.gl-t-c-l{
-	color: rgba(66,66,66 ,1);
+.gl-b-t-a{
+	border-top: solid 2.5px rgba(229,57,53 ,1);
 }
 
-.gl-t-c-d{
-	color: rgba(245,245,245 ,1);
+.gl-b-t-b{
+	border-top: solid 2.5px rgba(67,160,71 ,1);
 }
 
-
-
-
-.gl-t-a-a{
-	text-align: left;
-}
-
-.gl-t-a-b{
-	text-align: center;
-}
-
-.gl-t-a-c{
-	text-align: right;
-}
-
-.gl-t-a-d{
-	text-align: justify;
+.gl-b-t-c{
+	border-top: solid 2.5px rgba(30,136,229 ,1);
 }
 
 
 
 
-.gl-btn-l-a{
-	padding-top: 15px;
-	padding-bottom: 15px;
+.gl-btn-z-l{
+	padding-left: 15px;
+}
+
+.gl-btn-z-r{
+	padding-right: 15px;
+}
+
+
+
+
+.gl-btn-a-a{
 	padding-left: 15px;
 	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	
-	border: solid 2px rgba(66,66,66 ,1);
 	border-radius: 0;
+	border: solid 2.5px rgba(66,66,66 ,1);
 	
 	transition: 400ms;
 }
 
-.gl-btn-l-a:hover{
-	
+.gl-btn-a-a:hover{	
 	background-color: rgba(66,66,66 ,1);
-	
 	color: rgba(245,245,245 ,1);
+	
+	transition: 400ms;
 }
 
-.gl-btn-l-a > .fas{
+.gl-btn-a-a > .fas{
 	display: none;
 	width: 15px;
-}
-
-.gl-btn-l-a:hover > .fas{
-	display: inline-block;
+	line-height: 0;
+	
 	transition: 400ms;
 }
 
-.gl-btn-l-a > .gl-btn-x{
+.gl-btn-a-a:hover > .fas{
 	display: inline-block;
-	margin-left: 15px;
 }
 
-.gl-btn-l-a > .gl-btn-y{
-	display: inline-block;
-	margin-left: 15px;
+.gl-btn-a-a:hover > .gl-btn-z-l{
+	padding-left: 0px;
 }
 
-.gl-btn-l-a:hover > .gl-btn-x{
-	display: inline-block;
-	margin-left: 0;
+.gl-btn-a-a:hover > .gl-btn-z-r{
+	padding-left: 0px;
 }
 
-.gl-btn-l-a:hover > .gl-btn-y{
-	display: inline-block;
-	margin-left: 0px;
-	padding-left: 15px;
-}
-
-.gl-btn-d-a{
-	padding-top: 15px;
-	padding-bottom: 15px;
+.gl-btn-a-b{
 	padding-left: 15px;
 	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	
-	border: solid 2px rgba(245,245,245 ,1);
+	border-radius: 0;
+	border: solid 2.5px rgba(245,245,245 ,1);
+	
+	color: rgba(245,245,245 ,1);
+	
+	transition: 400ms;
+}
+
+.gl-btn-a-b:hover{	
+	background-color: rgba(245,245,245 ,1);
+	color: rgba(66,66,66 ,1);
+	
+	transition: 400ms;
+}
+
+.gl-btn-a-b > .fas{
+	display: none;
+	width: 15px;
+	line-height: 0;
+	
+	transition: 400ms;
+}
+
+.gl-btn-a-b:hover > .fas{
+	display: inline-block;
+}
+
+.gl-btn-a-b:hover > .gl-btn-z-l{
+	padding-left: 0px;
+}
+
+.gl-btn-a-b:hover > .gl-btn-z-r{
+	padding-left: 0px;
+}
+
+
+
+
+.gl-btn-b-a{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	
 	border-radius: 0;
 	
 	transition: 400ms;
 }
 
-.gl-btn-d-a:hover{
+.gl-btn-b-a:hover{
+	background-color: rgba(66,66,66 ,1);
+	color: rgba(245,245,245 ,1);
+	
+	transition: 400ms;
+}
+
+.gl-btn-b-a > .gl-btn-z-l{
+	display: none;
+}
+
+.gl-btn-b-b{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	
+	border-radius: 0;
+	
+	color: rgba(245,245,245 ,1);
+	
+	transition: 400ms;
+}
+
+.gl-btn-b-b:hover{
+	background-color: rgba(245,245,245 ,1);
+	color: rgba(66,66,66 ,1);
+	
+	transition: 400ms;
+}
+
+.gl-btn-b-b > .gl-btn-z-l{
+	display: none;
+}
+
+.gl-btn-c-a{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	
+	border-radius: 0;
+	border: solid 2.5px rgba(245,245,245 ,1);
 	
 	background-color: rgba(245,245,245 ,1);
-	
 	color: rgba(66,66,66 ,1);
-}
-
-.gl-btn-d-a > .fas{
-	display: none;
-	width: 15px;
-}
-
-.gl-btn-d-a:hover > .fas{
-	display: inline-block;
+	
 	transition: 400ms;
 }
 
-.gl-btn-d-a > .gl-btn-x{
-	display: inline-block;
-	margin-left: 15px;
+.gl-btn-c-a:hover{	
+	background-color: rgba(245,245,245 ,1);
+	color: rgba(66,66,66 ,1);
+	
+	transition: 400ms;
 }
 
-.gl-btn-d-a > .gl-btn-y{
-	display: inline-block;
-	margin-left: 15px;
-}
-
-.gl-btn-d-a:hover > .gl-btn-x{
-	display: inline-block;
-	margin-left: 0;
-}
-
-.gl-btn-d-a:hover > .gl-btn-y{
-	display: inline-block;
-	margin-left: 0px;
-	padding-left: 15px;
-}
-
-
-.gl-btn-l-b{
-	padding: 0;
-	font-style: italic;
-}
-
-.fas{	
+.gl-btn-c-a > .fas{
+	width: 15px;
 	line-height: 0;
+	
+	transition: 400ms;
 }
 
-.video{
-	width: 100%;
+.gl-btn-c 	-a > .gl-btn-z-l{
+	display: none;
 }
 
-.tile{
-	text-decoration: none;
+
+.input-group{
+	border-bottom: solid 2.5px rgba(66,66,66 ,1);
 }
+
+.form-control{
+	background-color: transparent;
+	border:none;
+	padding:0;
+	color: rgba(66,66,66 ,1);
+}
+
+#button-addon2{
+	background-color: transparent;
+	border: none;
+	color: rgba(66,66,66 ,1);
+}
+
+
+
 
 @media (max-width: 575.98px) {
 	
-	
-	.gl-t-a-a{
-	text-align: left;
-	}
-
-	.gl-t-a-b{
-		text-align: left;
-	}
-
-	.gl-t-a-c{
-		text-align: right;
-	}
-
-	.gl-t-a-d{
-		text-align: justify;
-	}
-
-}
-
-@media (max-width: 991.98px) {
-	
 	.gl-c-h-a-lr{
-		padding-left: 45px;
-		padding-right: 45px;
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 	
-	.gl-f-a-f{
-		font-family: 'Roboto', sans-serif;
-		font-size: 30px;
-		font-weight: 500;
-
-		line-height: 45px;
-	}
-
 }
+			
 			
 			</style>
 			
 			<!-- JavaScript (JS) -->
 			
 			<!-- Search Engine Optimization (SEO) -->
-			<title>Linya - PH | AI based Broadband for Homes, Business & Enterprise</title>
+			<title>Linya - PH | Broadband + AI for Homes, Business & Enterprise</title>
 		
 		</head>
 		
 		<body>
 		
-			<div class="gl-mh-d" id="forenterprise">
+			<div class="gl-mh-d" id="enterprise-home">
 			
 				<div class="gl-c-h-a-lr container-fluid">
 				
@@ -347,22 +454,318 @@
 						
 							<div class="row">
 							
-								<div class="col-xl-12">
+								<div class="col">
 								
 									<div class="row">
 									
+										<div class="col-md-6 col-xl-5">
+										
+											<div class="gl-c-v-a-t gl-c-v-d-b gl-f-a-a gl-t-c-b gl-t-a-l">VOICE . VIDEO . DATA</div>
+											<div class="gl-c-v-d-t gl-c-v-c-b gl-f-a-d gl-t-c-b gl-t-a-l">For Enterprise</div>
+											<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-c gl-t-c-b gl-t-a-j">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sit amet venenatis urna cursus eget nunc.</div>
+											<div class="gl-c-v-c-t gl-c-v-a-b gl-t-a-l d-grid gap-2 d-xl-block">
+											
+												<a class="gl-btn-a-a gl-f-a-a gl-t-a-c btn"><i class="gl-btn-z-l"></i>Apply Now<i class="gl-btn-z-r"></i><i class="fas fa-long-arrow-alt-right"></i></a>
+												<a class="gl-btn-a-a gl-f-a-a gl-t-a-c btn" href="#enterprise-services-plans"><i class="gl-btn-z-l"></i>Plans & Pricing<i class="gl-btn-z-r"></i><i class="fas fa-long-arrow-alt-right"></i></a>
+											
+											</div>
+										
+										</div>
+									
+									</div>
+								
+								</div>
+							
+							</div>
+						
+						</div>
+					
+					</div>
+				
+				</div>
+			
+			</div>
+			
+			<div class="gl-mh-d" id="enterprise-services-plans">
+			
+				<div class="gl-c-h-a-lr container-fluid">
+				
+					<div class="gl-mh-d gl-c-v-a-tb row align-items-center">
+					
+						<div class="col">
+						
+							<div class="row">
+							
+								<div class="col">
+								
+									<div class="row">
+									
+										<div class="col-md-6">
+										
+											<div class="gl-c-v-a-t gl-c-v-d-b gl-f-a-a gl-t-c-b gl-t-a-l">SERVICES</div>
+											<div class="gl-c-v-d-t gl-c-v-a-b gl-f-a-d gl-t-c-b gl-t-a-l">Plans & Pricing</div>
+										
+										</div>
+										
+										<div class="col-md-6 d-none d-md-block">
+										
+											<div class="gl-c-v-a-t gl-c-v-a-b gl-t-a-r">
+											
+												<a class="gl-btn-b-a gl-f-a-a gl-t-a-c btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="gl-btn-z-l"></i>go to - Enterprise VAS<i class="gl-btn-z-r"></i><i class="fas fa-arrow-circle-right"></i></a>
+												
+												<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+											
+											</div>
+										
+										</div>
+										
+										<div class="col-md-6 col-xl-4 collapse multi-collapse show" id="collapseExample1">
+									
+											<div class="row">
+
+												<div class="col">
+
+													<div class="gl-c-v-a-t"></div>
+
+												</div>
+
+											</div>
+
+											<div class="row">
+
+												<div class="col">
+
+													<div class="gl-b-t-a"></div>
+
+												</div>
+
+											</div>
+
+											<div class="gl-c-v-c-t row align-items-center">
+
+												<div class="col-6">
+
+													<div class="gl-c-v-c-t gl-c-v-d-b gl-f-a-a gl-t-c-b gl-t-a-l">RESIDENTIAL - FIBER</div>
+
+												</div>
+
+												<div class="col-6">
+
+													<div class="gl-t-a-r">
+
+														<a class="gl-btn-b-a gl-f-a-a gl-t-a-c btn" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2"><i class="gl-btn-z-l"></i>Wireless<i class="gl-btn-z-r"></i><i class="fas fa-arrow-circle-right"></i></a>
+
+													</div>
+
+												</div>
+
+											</div>
+
+											<div class=" row">
+
+												<div class="col-12">
+
+													<div class="gl-c-v-d-t gl-c-v-d-b gl-f-a-d gl-t-c-c gl-t-a-l">Small</div>
+													<div class="gl-c-v-d-t gl-c-v-d-b gl-c-v-c-t gl-f-a-a gl-t-c-b gl-t-a-l">recomended for up to 5 Users</div>
+													<div class="gl-c-v-d-t gl-c-v-c-b gl-f-a-d gl-t-c-b gl-t-a-l">50 Mbps</div>
+													<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-c gl-t-c-b gl-t-a-l">
+
+														<i class="fas fa-check"></i><i class="gl-btn-z-r"></i>Up to 50 Mbps Upload & Download Speed<br>
+														<i class="fas fa-check"></i><i class="gl-btn-z-r"></i>Unlimited Data <br>
+														<i class="fas fa-check"></i><i class="gl-btn-z-r"></i>Inclusive of Modem w/ Wi-Fi
+
+													</div>
+
+												</div>
+
+											</div>
+
+											<div class="gl-c-v-c-t gl-c-v-a-b row align-items-center">
+
+												<div class="col-lg-6">
+
+													<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-a gl-t-c-b gl-t-a-l">PHP 1,500.00 / month</div>
+
+												</div>
+
+												<div class="col-lg-6">
+
+													<div class="gl-t-a-r d-grid d-lg-block">
+
+														<a class="gl-btn-a-a gl-f-a-a gl-t-a-c btn"><i class="gl-btn-z-l"></i>Select Plan<i class="gl-btn-z-r"></i><i class="fas fa-plus"></i></a>
+
+													</div>
+
+												</div>
+
+											</div>
+
+										</div>
+										
+										<div class="col-md-6 col-xl-4 collapse multi-collapse" id="collapseExample2">
+									
+											<div class="row">
+
+												<div class="col">
+
+													<div class="gl-c-v-a-t"></div>
+
+												</div>
+
+											</div>
+
+											<div class="row">
+
+												<div class="col">
+
+													<div class="gl-b-t-a"></div>
+
+												</div>
+
+											</div>
+
+											<div class="gl-c-v-c-t row align-items-center">
+
+												<div class="col-6">
+
+													<div class="gl-c-v-c-t gl-c-v-d-b gl-f-a-a gl-t-c-b gl-t-a-l">RESIDENTIAL - WIRELESS</div>
+
+												</div>
+
+												<div class="col-6">
+
+													<div class="gl-t-a-r">
+
+														<a class="gl-btn-b-a gl-f-a-a gl-t-a-c btn" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2"><i class="gl-btn-z-l"></i>Fiber<i class="gl-btn-z-r"></i><i class="fas fa-arrow-circle-right"></i></a>
+
+													</div>
+
+												</div>
+
+											</div>
+
+											<div class=" row">
+
+												<div class="col-12">
+
+													<div class="gl-c-v-d-t gl-c-v-d-b gl-f-a-d gl-t-c-c gl-t-a-l">Small</div>
+													<div class="gl-c-v-d-t gl-c-v-d-b gl-c-v-c-t gl-f-a-a gl-t-c-b gl-t-a-l">recomended for up to 3 Users</div>
+													<div class="gl-c-v-d-t gl-c-v-c-b gl-f-a-d gl-t-c-b gl-t-a-l">30 Mbps</div>
+													<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-c gl-t-c-b gl-t-a-l">
+
+														<i class="fas fa-check"></i><i class="gl-btn-z-r"></i>Up to 30 Mbps Upload & Download Speed<br>
+														<i class="fas fa-check"></i><i class="gl-btn-z-r"></i>Unlimited Data <br>
+														<i class="fas fa-check"></i><i class="gl-btn-z-r"></i>Inclusive of Modem w/ Wi-Fi
+
+													</div>
+
+												</div>
+
+											</div>
+
+											<div class="gl-c-v-c-t gl-c-v-a-b row align-items-center">
+
+												<div class="col-lg-6">
+
+													<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-a gl-t-c-b gl-t-a-l">PHP 1,500.00 / month</div>
+
+												</div>
+
+												<div class="col-lg-6">
+
+													<div class="gl-t-a-r d-grid d-lg-block">
+
+														<a class="gl-btn-a-a gl-f-a-a gl-t-a-c btn"><i class="gl-btn-z-l"></i>Select Plan<i class="gl-btn-z-r"></i><i class="fas fa-plus"></i></a>
+
+													</div>
+
+												</div>
+
+											</div>
+
+										</div>
+										
 										<div class="col-md-6 col-xl-4">
-										
-											<div class="gl-c-v-a-t gl-c-v-c-b gl-f-a-b gl-t-c-l gl-t-a-a">VOICE . VIDEO . DATA</div>
-											<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-e gl-t-c-l gl-t-a-a">For Enterprise</div>
-											<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-c gl-t-c-l gl-t-a-d">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui id ornare arcu odio ut sem nulla pharetra diam.</div>
-											<div class="gl-c-v-b-t gl-c-v-a-b gl-t-a-a d-grid gap-2 d-xl-block">
-											
-												<a class="gl-t-c-l gl-t-a-b gl-f-a-b btn gl-btn-l-a"><i class="gl-btn-x"></i>Apply Now<i class="gl-btn-y"></i><i class="fas fa-long-arrow-alt-right"></i></a>
-												<a class="gl-t-c-l gl-t-a-b gl-f-a-b btn gl-btn-l-a"><i class="gl-btn-x"></i>Learn More<i class="gl-btn-y"></i><i class="fas fa-long-arrow-alt-right"></i></a>
-											
+									
+											<div class="row">
+
+												<div class="col">
+
+													<div class="gl-c-v-a-t"></div>
+
+												</div>
+
 											</div>
-										
+
+											<div class="row">
+
+												<div class="col">
+
+													<div class="gl-b-t-a"></div>
+
+												</div>
+
+											</div>
+
+											<div class="gl-c-v-c-t row align-items-center">
+
+												<div class="col-6">
+
+													<div class="gl-c-v-c-t gl-c-v-d-b gl-f-a-a gl-t-c-b gl-t-a-l">RESIDENTIAL - FIBER</div>
+
+												</div>
+
+												<div class="col-6">
+
+													<div class="gl-t-a-r">
+
+														<a class="gl-btn-b-a gl-f-a-a gl-t-a-c btn" href="#enterprise-services-vas"><i class="gl-btn-z-l"></i>Wireless<i class="gl-btn-z-r"></i><i class="fas fa-arrow-circle-right"></i></a>
+
+													</div>
+
+												</div>
+
+											</div>
+
+											<div class=" row">
+
+												<div class="col-12">
+
+													<div class="gl-c-v-d-t gl-c-v-d-b gl-f-a-d gl-t-c-c gl-t-a-l">Small</div>
+													<div class="gl-c-v-d-t gl-c-v-d-b gl-c-v-c-t gl-f-a-a gl-t-c-b gl-t-a-l">recomended for up to 5 Users</div>
+													<div class="gl-c-v-d-t gl-c-v-c-b gl-f-a-d gl-t-c-b gl-t-a-l">50 Mbps</div>
+													<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-c gl-t-c-b gl-t-a-l">
+
+														<i class="fas fa-check"></i><i class="gl-btn-z-r"></i>Up to 50 Mbps Upload & Download Speed<br>
+														<i class="fas fa-check"></i><i class="gl-btn-z-r"></i>Unlimited Data <br>
+														<i class="fas fa-check"></i><i class="gl-btn-z-r"></i>Inclusive of Modem w/ Wi-Fi
+
+													</div>
+
+												</div>
+
+											</div>
+
+											<div class="gl-c-v-c-t gl-c-v-a-b row align-items-center">
+
+												<div class="col-lg-6">
+
+													<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-a gl-t-c-b gl-t-a-l">PHP 1,500.00 / month</div>
+
+												</div>
+
+												<div class="col-lg-6">
+
+													<div class="gl-t-a-r d-grid d-lg-block">
+
+														<a class="gl-btn-a-a gl-f-a-a gl-t-a-c btn"><i class="gl-btn-z-l"></i>Select Plan<i class="gl-btn-z-r"></i><i class="fas fa-plus"></i></a>
+
+													</div>
+
+												</div>
+
+											</div>
+
 										</div>
 									
 									</div>
@@ -379,129 +782,61 @@
 			
 			</div>
 			
-			<div class="gl-mh-c" id="forenterprise-plans">
+			<div class="gl-mh-d" id="enterprise-services-vas">
 			
 				<div class="gl-c-h-a-lr container-fluid">
 				
-					<div class="gl-mh-c gl-c-v-a-tb row align-items-center">
+					<div class="gl-mh-d gl-c-v-a-tb row align-items-center">
 					
 						<div class="col">
 						
 							<div class="row">
 							
-								<div class="col-xl-12">
-									
-									<div class="row">
-									
-										<div class="col-xl-12">
-										
-											<div class="gl-c-v-a-t gl-c-v-c-b gl-f-a-b gl-t-c-l gl-t-a-a">SERVICES</div>
-											<div class="gl-c-v-c-t gl-c-v-a-b gl-f-a-e gl-t-c-l gl-t-a-a">Plans & Pricing</div>
-										
-										</div>
-									
-									</div>
+								<div class="col">
 								
 									<div class="row">
 									
-										<div class="col-md-6 col-xl-3">
+										<div class="col-md-6">
 										
-											<div class="gl-c-v-a-t gl-c-v-c-b gl-f-a-b gl-t-c-l gl-t-a-a" style="border-top: solid 4px rgba(229,57,53 ,1);">ENTERPRISE - FIBER</div>
-											<div class="gl-c-v-c-t gl-c-v-d-b gl-f-a-e gl-t-c-l gl-t-a-a" style="color:  rgba(229,57,53 ,1);">Small</div>
-											<div class="gl-c-v-d-t gl-c-v-b-b gl-f-a-c gl-t-c-l gl-t-a-a">recomended for up to 20 Users</div>
-											<div class="gl-c-v-b-t gl-c-v-d-b gl-f-a-e gl-t-c-l gl-t-a-a">25 Mbps</div>
-											<div class="gl-c-v-d-t gl-c-v-c-b gl-f-a-c gl-t-c-l gl-t-a-a">USD 500.00 / month, vat-ex, 24 months lock-in</div>
-											<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-c gl-t-c-l gl-t-a-a"><i class="fas fa-check" style="padding-right: 15px;"></i>Guaranteed 25 Mbps upload and download speed<br><i class="fas fa-check" style="padding-right: 15px;"></i>99.99% Service Level Agreement<br><i class="fas fa-check" style="padding-right: 15px;"></i>Inclusive of Enterprise Grade Router<br><i class="fas fa-check" style="padding-right: 15px;"></i>Static IPv4 & IPv6 address</div>
-											<div class="gl-c-v-b-t gl-c-v-a-b gl-t-a-a d-grid gap-2 d-xl-block">
+											<div class="gl-c-v-a-t gl-c-v-d-b gl-f-a-a gl-t-c-b gl-t-a-l">SERVICES</div>
+											<div class="gl-c-v-d-t gl-c-v-a-b gl-f-a-d gl-t-c-b gl-t-a-l">Value Added Service</div>
+										
+										</div>
+										
+										<div class="col-md-6 d-none d-md-block">
+										
+											<div class="gl-c-v-a-t gl-c-v-a-b gl-t-a-r">
 											
-												<a class="gl-t-c-l gl-t-a-b gl-f-a-b btn gl-btn-l-a"><i class="gl-btn-x"></i>Select Plan<i class="gl-btn-y"></i><i class="fas fa-plus"></i></a>
+												<a class="gl-btn-b-a gl-f-a-a gl-t-a-c btn" href="#enterprise-services-plans"><i class="gl-btn-z-l"></i>go to - Enterprise Plans<i class="gl-btn-z-r"></i><i class="fas fa-arrow-circle-right"></i></a>
 											
 											</div>
 										
 										</div>
-									
+										
+										<div class="col-xl-12 gl-c-v-a-t">
+										
+										
+										
+										</div>
+										
 										<div class="col-md-6 col-xl-3">
 										
-											<div class="gl-c-v-a-t gl-c-v-c-b gl-f-a-b gl-t-c-l gl-t-a-a" style="border-top: solid 4px rgba(67,160,71 ,1);">ENTERPRISE - FIBER</div>
-											<div class="gl-c-v-c-t gl-c-v-d-b gl-f-a-e gl-t-c-l gl-t-a-a" style="color:  rgba(67,160,71 ,1);">Medium</div>
-											<div class="gl-c-v-d-t gl-c-v-b-b gl-f-a-c gl-t-c-l gl-t-a-a">recomended for up to 40 Users</div>
-											<div class="gl-c-v-b-t gl-c-v-d-b gl-f-a-e gl-t-c-l gl-t-a-a">50 Mbps</div>
-											<div class="gl-c-v-d-t gl-c-v-c-b gl-f-a-c gl-t-c-l gl-t-a-a">USD 1,000.00 / month, vat-ex, 24 months lock-in</div>
-											<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-c gl-t-c-l gl-t-a-a"><i class="fas fa-check" style="padding-right: 15px;"></i>Guaranteed 25 Mbps upload and download speed<br><i class="fas fa-check" style="padding-right: 15px;"></i>99.99% Service Level Agreement<br><i class="fas fa-check" style="padding-right: 15px;"></i>Inclusive of Enterprise Grade Router<br><i class="fas fa-check" style="padding-right: 15px;"></i>Static IPv4 & IPv6 address</div>
-											<div class="gl-c-v-b-t gl-c-v-a-b gl-t-a-a d-grid gap-2 d-xl-block">
+											<div class="gl-c-v-b-t gl-c-v-d-b gl-f-a-a gl-t-c-b gl-t-a-l gl-b-t-a">ENTERPRISE</div>
+											<div class="gl-c-v-d-t gl-c-v-c-b gl-f-a-d gl-t-c-c gl-t-a-l">Redundancy</div>
+											<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-a gl-t-c-b gl-t-a-l">recomended for critical operations</div>
+											<div class="gl-c-v-c-t gl-c-v-d-b gl-f-a-d gl-t-c-b gl-t-a-l">High Availability</div>
+											<div class="gl-c-v-d-t gl-c-v-c-b gl-f-a-a gl-t-c-b gl-t-a-l">+ USD 200.00 / month, vat-ex</div>
+											<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-c gl-t-c-b gl-t-a-l">
 											
-												<a class="gl-t-c-l gl-t-a-b gl-f-a-b btn gl-btn-l-a"><i class="gl-btn-x"></i>Select Plan<i class="gl-btn-y"></i><i class="fas fa-plus"></i></a>
+												<i class="fas fa-check"></i><i class="gl-btn-z-r"></i>Unlimited Data<br>
+												<i class="fas fa-check"></i><i class="gl-btn-z-r"></i>99.99% Service Level Agreement<br>
+												<i class="fas fa-check"></i><i class="gl-btn-z-r"></i>100% CINR<br>
+												<i class="fas fa-check"></i><i class="gl-btn-z-r"></i>Static IPv4 & IPv6 Address
 											
 											</div>
-										
-										</div>
-								
-										<div class="col-md-6 col-xl-3">
-										
-											<div class="gl-c-v-a-t gl-c-v-c-b gl-f-a-b gl-t-c-l gl-t-a-a" style="border-top: solid 4px rgba(30,136,229 ,1);">ENTERPRISE - FIBER</div>
-											<div class="gl-c-v-c-t gl-c-v-d-b gl-f-a-e gl-t-c-l gl-t-a-a" style="color:  rgba(30,136,229 ,1);">Large</div>
-											<div class="gl-c-v-d-t gl-c-v-b-b gl-f-a-c gl-t-c-l gl-t-a-a">recomended for up to 80 Users</div>
-											<div class="gl-c-v-b-t gl-c-v-d-b gl-f-a-e gl-t-c-l gl-t-a-a">100 Mbps</div>
-											<div class="gl-c-v-d-t gl-c-v-c-b gl-f-a-c gl-t-c-l gl-t-a-a">USD 2,000.00 / month, vat-ex, 24 months lock-in</div>
-											<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-c gl-t-c-l gl-t-a-a"><i class="fas fa-check" style="padding-right: 15px;"></i>Guaranteed 25 Mbps upload and download speed<br><i class="fas fa-check" style="padding-right: 15px;"></i>99.99% Service Level Agreement<br><i class="fas fa-check" style="padding-right: 15px;"></i>Inclusive of Enterprise Grade Router<br><i class="fas fa-check" style="padding-right: 15px;"></i>Static IPv4 & IPv6 address</div>
-											<div class="gl-c-v-b-t gl-c-v-a-b gl-t-a-a d-grid gap-2 d-xl-block">
+											<div class="gl-c-v-c-t gl-c-v-a-b gl-t-a-l d-grid gap-2 d-xl-block">
 											
-												<a class="gl-t-c-l gl-t-a-b gl-f-a-b btn gl-btn-l-a"><i class="gl-btn-x"></i>Select Plan<i class="gl-btn-y"></i><i class="fas fa-plus"></i></a>
-											
-											</div>
-										
-										</div>
-									
-									</div>
-								
-								</div>
-							
-							</div>
-						
-						</div>
-					
-					</div>
-				
-				</div>
-			
-			</div>
-			
-			<div class="gl-mh-c" id="forenterprise-vas">
-			
-				<div class="gl-c-h-a-lr container-fluid">
-				
-					<div class="gl-mh-c gl-c-v-a-tb row align-items-center">
-					
-						<div class="col">
-						
-							<div class="row">
-							
-								<div class="col-xl-12">
-									
-									<div class="row">
-									
-										<div class="col-xl-12">
-										
-											<div class="gl-c-v-a-t gl-c-v-c-b gl-f-a-b gl-t-c-l gl-t-a-a">SERVICES</div>
-											<div class="gl-c-v-c-t gl-c-v-a-b gl-f-a-e gl-t-c-l gl-t-a-a">Value Added Service</div>
-										
-										</div>
-									
-									</div>
-								
-									<div class="row">
-									
-										<div class="col-md-6 col-xl-3">
-										
-											<div class="gl-c-v-a-t gl-c-v-c-b gl-f-a-b gl-t-c-l gl-t-a-a" style="border-top: solid 4px rgba(251,140,0 ,1);">ENTERPRISE - N+1</div>
-											<div class="gl-c-v-c-t gl-c-v-d-b gl-f-a-e gl-t-c-l gl-t-a-a" style="color:  rgba(251,140,0 ,1);">Back-up</div>
-											<div class="gl-c-v-d-t gl-c-v-b-b gl-f-a-c gl-t-c-l gl-t-a-a">recomended for mission critical operations</div>
-											<div class="gl-c-v-b-t gl-c-v-d-b gl-f-a-e gl-t-c-l gl-t-a-a">Auto-Scale</div>
-											<div class="gl-c-v-d-t gl-c-v-c-b gl-f-a-c gl-t-c-l gl-t-a-a">Subscribed Plan + USD 200.00 / month, vat-ex</div>
-											<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-c gl-t-c-l gl-t-a-a"><i class="fas fa-check" style="padding-right: 15px;"></i>Guaranteed High Availability Connection<br><i class="fas fa-check" style="padding-right: 15px;"></i>99.99% Service Level Agreement<br><i class="fas fa-check" style="padding-right: 15px;"></i>Inclusive of Enterprise Grade Router<br><i class="fas fa-check" style="padding-right: 15px;"></i>Optional static ipv4 & ipv6 address</div>
-											<div class="gl-c-v-b-t gl-c-v-a-b gl-t-a-a d-grid gap-2 d-xl-block">
-											
-												<a class="gl-t-c-l gl-t-a-b gl-f-a-b btn gl-btn-l-a"><i class="gl-btn-x"></i>Select Add-on<i class="gl-btn-y"></i><i class="fas fa-plus"></i></a>
+												<a class="gl-btn-a-a gl-f-a-a gl-t-a-c btn"><i class="gl-btn-z-l"></i>Select Add-on<i class="gl-btn-z-r"></i><i class="fas fa-plus"></i></a>
 											
 											</div>
 										
@@ -509,15 +844,45 @@
 										
 										<div class="col-md-6 col-xl-3">
 										
-											<div class="gl-c-v-a-t gl-c-v-c-b gl-f-a-b gl-t-c-l gl-t-a-a" style="border-top: solid 4px rgba(57,73,171 ,1);">ENTERPRISE - WI-FI</div>
-											<div class="gl-c-v-c-t gl-c-v-d-b gl-f-a-e gl-t-c-l gl-t-a-a" style="color:  rgba(57,73,171 ,1);">Wi-Fi + Arkipelago</div>
-											<div class="gl-c-v-d-t gl-c-v-b-b gl-f-a-c gl-t-c-l gl-t-a-a">recomended for mission critical operations</div>
-											<div class="gl-c-v-b-t gl-c-v-d-b gl-f-a-e gl-t-c-l gl-t-a-a">2.4 & 5Ghz Wireless</div>
-											<div class="gl-c-v-d-t gl-c-v-c-b gl-f-a-c gl-t-c-l gl-t-a-a">Subscribed Plan + USD 25.00 / month per AP, vat-ex</div>
-											<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-c gl-t-c-l gl-t-a-a"><i class="fas fa-check" style="padding-right: 15px;"></i>Guaranteed High Availability Connection<br><i class="fas fa-check" style="padding-right: 15px;"></i>99.99% Service Level Agreement<br><i class="fas fa-check" style="padding-right: 15px;"></i>Inclusive of Enterprise Grade Router<br><i class="fas fa-check" style="padding-right: 15px;"></i>Optional static ipv4 & ipv6 address</div>
-											<div class="gl-c-v-b-t gl-c-v-a-b gl-t-a-a d-grid gap-2 d-xl-block">
+											<div class="gl-c-v-b-t gl-c-v-d-b gl-f-a-a gl-t-c-b gl-t-a-l gl-b-t-b">ENTERPRISE</div>
+											<div class="gl-c-v-d-t gl-c-v-c-b gl-f-a-d gl-t-c-d gl-t-a-l">Wi-Fi + Arkipelago</div>
+											<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-a gl-t-c-b gl-t-a-l">recomended for establishments</div>
+											<div class="gl-c-v-c-t gl-c-v-d-b gl-f-a-d gl-t-c-b gl-t-a-l">2.4 & 5 Ghz Wi-Fi</div>
+											<div class="gl-c-v-d-t gl-c-v-c-b gl-f-a-a gl-t-c-b gl-t-a-l">Request for a Quotation</div>
+											<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-c gl-t-c-b gl-t-a-l">
 											
-												<a class="gl-t-c-l gl-t-a-b gl-f-a-b btn gl-btn-l-a"><i class="gl-btn-x"></i>Select Add-on<i class="gl-btn-y"></i><i class="fas fa-plus"></i></a>
+												<i class="fas fa-check"></i><i class="gl-btn-z-r"></i>Unlimited Data<br>
+												<i class="fas fa-check"></i><i class="gl-btn-z-r"></i>99.99% Service Level Agreement<br>
+												<i class="fas fa-check"></i><i class="gl-btn-z-r"></i>100% CINR<br>
+												<i class="fas fa-check"></i><i class="gl-btn-z-r"></i>Static IPv4 & IPv6 Address
+											
+											</div>
+											<div class="gl-c-v-c-t gl-c-v-a-b gl-t-a-l d-grid gap-2 d-xl-block">
+											
+												<a class="gl-btn-a-a gl-f-a-a gl-t-a-c btn"><i class="gl-btn-z-l"></i>Select Add-on<i class="gl-btn-z-r"></i><i class="fas fa-plus"></i></a>
+											
+											</div>
+										
+										</div>
+										
+										<div class="col-md-12 col-xl-6">
+										
+											<div class="gl-c-v-b-t gl-c-v-d-b gl-f-a-a gl-t-c-b gl-t-a-l gl-b-t-c">ENTERPRISE</div>
+											<div class="gl-c-v-d-t gl-c-v-c-b gl-f-a-d gl-t-c-e gl-t-a-l">Managed Service Provider</div>
+											<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-a gl-t-c-b gl-t-a-l">reduce unnecessary long-term, man power and hardware costs</div>
+											<div class="gl-c-v-c-t gl-c-v-d-b gl-f-a-d gl-t-c-b gl-t-a-l">Infrastructure as a Service</div>
+											<div class="gl-c-v-d-t gl-c-v-c-b gl-f-a-a gl-t-c-b gl-t-a-l">Request for a Quotation</div>
+											<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-c gl-t-c-b gl-t-a-l">
+											
+												<i class="fas fa-check"></i><i class="gl-btn-z-r"></i>Unlimited Data<br>
+												<i class="fas fa-check"></i><i class="gl-btn-z-r"></i>99.99% Service Level Agreement<br>
+												<i class="fas fa-check"></i><i class="gl-btn-z-r"></i>100% CINR<br>
+												<i class="fas fa-check"></i><i class="gl-btn-z-r"></i>Static IPv4 & IPv6 Address
+											
+											</div>
+											<div class="gl-c-v-c-t gl-c-v-a-b gl-t-a-l d-grid gap-2 d-xl-block">
+											
+												<a class="gl-btn-a-a gl-f-a-a gl-t-a-c btn"><i class="gl-btn-z-l"></i>Select Add-on<i class="gl-btn-z-r"></i><i class="fas fa-plus"></i></a>
 											
 											</div>
 										
@@ -537,11 +902,11 @@
 			
 			</div>
 			
-			<div class="gl-mh-b" id="calltoaction">
+			<div class="gl-mh-b" id="enterprise-cta">
 			
 				<div class="gl-c-h-a-lr container-fluid">
 				
-					<div class="gl-c-v-a-tb gl-mh-b row align-items-center">
+					<div class="gl-mh-b gl-c-v-a-tb row align-items-center">
 					
 						<div class="col">
 						
@@ -553,7 +918,7 @@
 									
 										<div class="col-xl-8">
 										
-											<div class="gl-c-v-b-b gl-c-v-a-t gl-t-c-d gl-f-a-f gl-t-a-b">Experience the most reliable and resilient connection, powered by Artificial Inteligence </div>
+											<div class="gl-c-v-a-t gl-c-v-c-b gl-f-a-e gl-t-c-a gl-t-a-c">Experience the most reliable network powered by Artificial Inteligence.</div>
 										
 										</div>
 									
@@ -561,12 +926,12 @@
 									
 									<div class="row justify-content-center">
 									
-										<div class="col-md-6 col-xl-12">
+										<div class="col-md-6 col-xl-4">
+										
+											<div class="gl-c-v-c-t gl-c-v-a-b gl-t-a-c d-grid gap-2 d-xl-block">
 											
-											<div class="gl-c-v-b-t gl-c-v-a-b gl-t-a-b d-grid gap-2 d-xl-block">
-											
-												<a class="gl-t-c-d gl-t-a-b gl-f-a-a btn gl-btn-d-a"><i class="gl-btn-x"></i>Apply Now<i class="gl-btn-y"></i><i class="fas fa-long-arrow-alt-right"></i></a>
-												<a class="gl-t-c-d gl-t-a-b gl-f-a-a btn gl-btn-d-a"><i class="gl-btn-x"></i>Learn More<i class="gl-btn-y"></i><i class="fas fa-long-arrow-alt-right"></i></a>
+												<a class="gl-btn-c-a gl-f-a-a gl-t-a-c btn"><i class="gl-btn-z-l"></i>Apply Now<i class="gl-btn-z-r"></i><i class="fas fa-long-arrow-alt-right"></i></a>
+												<a class="gl-btn-a-b gl-f-a-a gl-t-a-c btn"><i class="gl-btn-z-l"></i>Live Chat<i class="gl-btn-z-r"></i><i class="fas fa-comment-alt"></i></a>
 											
 											</div>
 										
@@ -586,7 +951,7 @@
 			
 			</div>
 			
-			<div class="gl-mh-d" id="faq">
+			<div class="gl-mh-d" id="enterprise-faq">
 			
 				<div class="gl-c-h-a-lr container-fluid">
 				
@@ -596,173 +961,73 @@
 						
 							<div class="row">
 							
-								<div class="col-xl-12">
+								<div class="col">
 								
 									<div class="row">
 									
-										<div class="col-xl-12">
+										<div class="col-md-6">
 										
-											<div class="gl-c-v-a-t gl-c-v-c-b gl-f-a-b gl-t-c-l gl-t-a-a">HELP & SUPPORT</div>
-											<div class="gl-c-v-c-t gl-c-v-b-b gl-f-a-e gl-t-c-l gl-t-a-a">Frequently Asked Questions</div>
-										
-										</div>
-									
-									</div>
-									
-									<div class="row gl-c-v-a-tb">
-									
-										<div class="col-md-6 col-xl-4">
-										
-											<div class="gl-c-v-b-t gl-c-v-c-b gl-f-a-d gl-t-c-l gl-t-a-a">Q: Interdum varius sit amet mattis</div>
-											<div class="gl-c-v-c-t gl-c-v-b-b gl-f-a-c gl-t-c-l gl-t-a-d">A: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit aliquam etiam erat velit. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Magna ac placerat vestibulum lectus mauris ultrices eros.
-
-</div>
+											<div class="gl-c-v-a-t gl-c-v-d-b gl-f-a-a gl-t-c-b gl-t-a-l">HELP & SUPPORT</div>
+											<div class="gl-c-v-d-t gl-c-v-a-b gl-f-a-d gl-t-c-b gl-t-a-l">Frequently Asked Questions</div>
 										
 										</div>
 										
-										<div class="col-md-6 col-xl-4">
+										<div class="col-md-6 d-none d-md-block">
 										
-											<div class="gl-c-v-b-t gl-c-v-c-b gl-f-a-d gl-t-c-l gl-t-a-a">Q: Interdum varius sit amet mattis</div>
-											<div class="gl-c-v-c-t gl-c-v-b-b gl-f-a-c gl-t-c-l gl-t-a-d">A: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit aliquam etiam erat velit. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Magna ac placerat vestibulum lectus mauris ultrices eros.
-
-</div>
-										
-										</div>
-										<div class="col-md-6 col-xl-4">
-										
-											<div class="gl-c-v-b-t gl-c-v-c-b gl-f-a-d gl-t-c-l gl-t-a-a">Q: Interdum varius sit amet mattis</div>
-											<div class="gl-c-v-c-t gl-c-v-b-b gl-f-a-c gl-t-c-l gl-t-a-d">A: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit aliquam etiam erat velit. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Magna ac placerat vestibulum lectus mauris ultrices eros.
-
-</div>
-										
-										</div>
-									
-									</div>
-									
-									<div class="row">
-									
-										<div class="col-md-6 col-xl-12">
+											<div class="gl-c-v-a-t gl-c-v-a-b gl-t-a-r">
 											
-											<div class="gl-c-v-b-t gl-c-v-a-b d-grid d-xl-block">
-											
-												<a class="gl-t-c-l gl-t-a-b gl-f-a-b btn gl-btn-l-a"><i class="gl-btn-x"></i>View all Help & Support<i class="gl-btn-y"></i><i class="fas fa-long-arrow-alt-right"></i></a>
+												<a class="gl-btn-b-a gl-f-a-a gl-t-a-c btn" href="#enterprise-services-plans"><i class="gl-btn-z-l"></i>go to - Help & Support<i class="gl-btn-z-r"></i><i class="fas fa-arrow-circle-right"></i></a>
 											
 											</div>
 										
 										</div>
-									
-									</div>
-								
-								</div>
-							
-							</div>
-						
-						</div>
-					
-					</div>
-				
-				</div>
-			
-			</div>
-			
-			<div class="gl-mh-d" id="news">
-			
-				<div class="gl-c-h-a-lr container-fluid">
-				
-					<div class="gl-mh-d gl-c-v-a-tb row align-items-center">
-					
-						<div class="col">
-						
-							<div class="row">
-							
-								<div class="col-xl-12">
-								
-									<div class="row">
-									
-										<div class="col-xl-12">
 										
-											<div class="gl-c-v-a-t gl-c-v-c-b gl-f-a-b gl-t-c-l gl-t-a-a">PUBLIC RELATIONS</div>
-											<div class="gl-c-v-c-t gl-c-v-b-b gl-f-a-e gl-t-c-l gl-t-a-a">Corporate News & Events</div>
+										<div class="col-xl-12 gl-c-v-a-t">
+										
+										
 										
 										</div>
-									
-									</div>
-									
-									<div class="row gl-c-v-a-tb">
-									
-										<div class="col-md-6 col-xl-4">
 										
-											<a class="tile" href="#test">
+										<div class="col-md-6 col-xl-3">
+										
+											<div class="gl-c-v-b-t gl-c-v-d-b gl-f-a-b gl-t-c-b gl-t-a-l gl-b-t-a">Q: Ac felis donec et odio pellentesque diam volutpat commodo sed</div>
+											<div class="gl-c-v-d-t gl-c-v-a-b gl-f-a-c gl-t-c-b gl-t-a-l">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget sit amet tellus cras adipiscing enim eu turpis egestas. Justo laoreet sit amet cursus sit. Ut pharetra sit amet aliquam id diam.</div>
+										
+										</div>
+										
+										<div class="col-md-6 col-xl-3">
+										
+											<div class="gl-c-v-b-t gl-c-v-d-b gl-f-a-b gl-t-c-b gl-t-a-l gl-b-t-a">Q: Ac felis donec et odio pellentesque diam volutpat commodo sed</div>
+											<div class="gl-c-v-d-t gl-c-v-a-b gl-f-a-c gl-t-c-b gl-t-a-l">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget sit amet tellus cras adipiscing enim eu turpis egestas. Justo laoreet sit amet cursus sit. Ut pharetra sit amet aliquam id diam.</div>
+										
+										</div>
+										
+										<div class="col-md-6 col-xl-3">
+										
+											<div class="gl-c-v-b-t gl-c-v-d-b gl-f-a-b gl-t-c-b gl-t-a-l gl-b-t-a">Q: Ac felis donec et odio pellentesque diam volutpat commodo sed</div>
+											<div class="gl-c-v-d-t gl-c-v-a-b gl-f-a-c gl-t-c-b gl-t-a-l">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget sit amet tellus cras adipiscing enim eu turpis egestas. Justo laoreet sit amet cursus sit. Ut pharetra sit amet aliquam id diam.</div>
+										
+										</div>
+										
+										<div class="col-md-6 col-xl-3">
+										
+											<div class="gl-c-v-b-t gl-c-v-d-b gl-f-a-b gl-t-c-b gl-t-a-l gl-b-t-a">Q: Ac felis donec et odio pellentesque diam volutpat commodo sed</div>
+											<div class="gl-c-v-d-t gl-c-v-a-b gl-f-a-c gl-t-c-b gl-t-a-l">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget sit amet tellus cras adipiscing enim eu turpis egestas. Justo laoreet sit amet cursus sit. Ut pharetra sit amet aliquam id diam.</div>
+										
+										</div>
+										
+										<div class="col-md-6 col-xl-6">
+										
+											<div class="gl-c-v-a-t gl-c-v-d-b gl-f-a-a gl-t-c-b gl-t-a-l">SEARCH FOR A QUESTION</div>
+											<div class="gl-c-v-d-t gl-c-v-a-b">
 											
-												<div class="gl-c-v-b-t gl-c-v-c-b">
-											
-												<video class="video" onmouseover="this.play()" onmouseout="this.pause();this.currentTime=55;" muted loop>
-												
-													<source src="assets/AWAKENING _ NEW ZEALAND 4K ULTRA HD - Copy.mp4" type="video/mp4">
-												
-												</video>
-											
+												<div class="gl-f-a-a gl-t-c-b gl-t-a-l input-group mb-3">
+
+													  <input type="text" class="form-control shadow-none gl-f-a-d gl-t-c-b gl-t-a-l" placeholder="Search" aria-label="search" aria-describedby="button-addon2">
+													  <button class="btn btn-outline-secondary shadow-none" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+
 												</div>
-												<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-d gl-t-c-l gl-t-a-a">Interdum varius sit amet mattis</div>
-												<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-c gl-t-c-l gl-t-a-d">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-												<div class="gl-c-v-c-t gl-c-v-b-b gl-f-a-a gl-t-c-l gl-t-a-a">about an hour ago</div>
-											
-											</a>
-											
-										</div>
-										
-										<div class="col-md-6 col-xl-4">
-										
-											<a class="tile" href="#test">
-											
-												<div class="gl-c-v-b-t gl-c-v-c-b">
-											
-												<video class="video" onmouseover="this.play()" onmouseout="this.pause();this.currentTime=55;" muted loop>
 												
-													<source src="assets/AWAKENING _ NEW ZEALAND 4K ULTRA HD - Copy.mp4" type="video/mp4">
-												
-												</video>
-											
-												</div>
-												<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-d gl-t-c-l gl-t-a-a">Interdum varius sit amet mattis</div>
-												<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-c gl-t-c-l gl-t-a-d">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-												<div class="gl-c-v-c-t gl-c-v-b-b gl-f-a-a gl-t-c-l gl-t-a-a">about 6 hours ago</div>
-											
-											</a>
-											
-										</div>
-										
-										<div class="col-md-6 col-xl-4">
-										
-											<a class="tile" href="#test">
-											
-												<div class="gl-c-v-b-t gl-c-v-c-b">
-											
-												<video class="video" onmouseover="this.play()" onmouseout="this.pause();this.currentTime=55;" muted loop>
-												
-													<source src="assets/AWAKENING _ NEW ZEALAND 4K ULTRA HD - Copy.mp4" type="video/mp4">
-												
-												</video>
-											
-												</div>
-												<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-d gl-t-c-l gl-t-a-a">Interdum varius sit amet mattis</div>
-												<div class="gl-c-v-c-t gl-c-v-c-b gl-f-a-c gl-t-c-l gl-t-a-d">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-												<div class="gl-c-v-c-t gl-c-v-b-b gl-f-a-a gl-t-c-l gl-t-a-a">December 28, 2020 - 8:00 AM</div>
-											
-											</a>
-											
-										</div>
-										
-									</div>
-									
-									<div class="row">
-									
-										<div class="col-md-6 col-xl-12">
-											
-											<div class="gl-c-v-b-t gl-c-v-a-b d-grid d-xl-block">
-											
-												<a class="gl-t-c-l gl-t-a-b gl-f-a-b btn gl-btn-l-a"><i class="gl-btn-x"></i>View all Public Relations<i class="gl-btn-y"></i><i class="fas fa-long-arrow-alt-right"></i></a>
-											
 											</div>
 										
 										</div>
@@ -785,58 +1050,42 @@
 			
 				<div class="gl-c-h-a-lr container-fluid">
 				
-					<div class="gl-mh-b gl-c-v-a-tb row align-items-center">
+					<div class="gl-mh-b gl-c-v-a-tb row">
 					
 						<div class="col">
 						
 							<div class="row">
 							
-								<div class="col-xl-12">
+								<div class="col">
 								
 									<div class="row">
 									
-										<div class="col-xl-8">
+										<div class="col-md-6">
 										
-											<div class="gl-c-v-a-t gl-c-v-c-b gl-f-a-b gl-t-c-d gl-t-a-a">HELP & SUPPORT</div>
-											<div class="gl-c-v-c-t gl-c-v-b-b gl-f-a-e gl-t-c-d gl-t-a-a">Frequently Asked Questions</div>
-										
-										</div>
-									
-									</div>
-									
-									<div class="row gl-c-v-a-tb">
-									
-										<div class="col-md-6 col-xl-4">
-										
-											<div class="gl-c-v-b-t gl-c-v-c-b gl-f-a-d gl-t-c-d gl-t-a-a">Q: Lorem ipsum dolor sit amet</div>
-											<div class="gl-c-v-c-t gl-c-v-b-b gl-f-a-c gl-t-c-d gl-t-a-d">A: consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+											<div class="gl-c-v-a-t gl-c-v-d-b gl-f-a-d gl-t-c-a gl-t-a-l">Linya</div>
+											<div class="gl-c-v-d-t gl-c-v-a-b gl-f-a-c gl-t-c-a gl-t-a-l">Linya Philippines<br>a Mioten Group Company</div>
 										
 										</div>
 										
-										<div class="col-md-6 col-xl-4">
+										<div class="col-md-6 d-none d-md-block">
 										
-											<div class="gl-c-v-b-t gl-c-v-c-b gl-f-a-d gl-t-c-d gl-t-a-a">Q: Lorem ipsum dolor sit amet</div>
-											<div class="gl-c-v-c-t gl-c-v-b-b gl-f-a-c gl-t-c-d gl-t-a-d">A: consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-										
-										</div>
-										<div class="col-md-6 col-xl-4">
-										
-											<div class="gl-c-v-b-t gl-c-v-c-b gl-f-a-d gl-t-c-d gl-t-a-a">Q: Lorem ipsum dolor sit amet</div>
-											<div class="gl-c-v-c-t gl-c-v-b-b gl-f-a-c gl-t-c-d gl-t-a-d">A: consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-										
-										</div>
-									
-									</div>
-									
-									<div class="row">
-									
-										<div class="col-md-6 col-xl-12">
+											<div class="gl-c-v-a-t gl-c-v-a-b gl-t-a-r">
 											
-											<div class="gl-c-v-b-t gl-c-v-a-b d-grid d-xl-block">
-											
-												<a class="gl-t-c-d gl-t-a-b gl-f-a-b btn gl-btn-d-a"><i class="gl-btn-x"></i>Read More<i class="gl-btn-y"></i><i class="fas fa-long-arrow-alt-right"></i></a>
+												<a class="gl-btn-b-b gl-f-a-a gl-t-a-c btn" href="#enterprise-home"><i class="gl-btn-z-l"></i>go to - Top of Page<i class="gl-btn-z-r"></i><i class="fas fa-arrow-circle-right"></i></a>
 											
 											</div>
+										
+										</div>
+										
+										<div class="col-xl-12 gl-c-v-a-t">
+										
+										
+										
+										</div>
+										
+										<div class="col-md-6 col-xl-3">
+										
+											<div class="gl-c-v-b-t gl-c-v-a-b gl-f-a-c gl-t-c-a gl-t-a-l">Copyright &copy; 2021, Linya Telecommunications Incorporated, All-rights Reserved.</div>
 										
 										</div>
 									
@@ -855,7 +1104,6 @@
 			</div>
 			
 			<!-- JavaScript (JS) -->
-			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 		
 		</body>
