@@ -284,3 +284,42 @@
 	}
 	
 }
+
+
+
+@media (max-width: 1199.98px) {
+	
+	
+	.gl-f-g-a{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12.5px;
+	font-weight: 400;
+	
+	line-height: 13px;
+}
+
+.gl-f-g-b{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12.5px;
+	font-weight: 600;
+	
+	line-height: 13px;
+}
+
+.gl-f-g-c{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12.5px;
+	font-weight: 400;
+	
+	line-height: 17.5px;
+}
+
+.gl-f-g-d{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 27.5px;
+	font-weight: 600;
+	
+	line-height: 27.5px;
+}
+	
+}
