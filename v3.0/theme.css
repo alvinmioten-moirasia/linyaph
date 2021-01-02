@@ -252,3 +252,14 @@
 .gl-btn-ab:hover > .gl-btn-z-r{
 	padding-left: 15px;
 }
+
+
+
+
+/* Bug Fix */
+
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+}
