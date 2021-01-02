@@ -1,0 +1,254 @@
+.gl-mh-sm{
+	min-height: 25vh;
+}
+
+.gl-mh-md{
+	min-height: 50vh;
+}
+
+.gl-mh-lg{
+	min-height: 75vh;
+}
+
+.gl-mh-xl{
+	min-height: 100vh;
+}
+
+
+
+
+.gl-c-h-a-lr{
+	padding-left: 90px;
+	padding-right: 90px;
+}
+
+.gl-c-h-b-r{
+	padding-right: 15px;
+}
+
+.gl-c-v-a-tb{
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+
+.gl-c-v-a-t{
+	padding-top: 45px;
+}
+
+.gl-c-v-a-b{
+	padding-bottom: 45px;
+}
+
+.gl-c-v-b-tb{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.gl-c-v-b-t{
+	padding-top: 30px;
+}
+
+.gl-c-v-b-b{
+	padding-bottom: 30px;
+}
+
+.gl-c-v-c-tb{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.gl-c-v-c-t{
+	padding-top: 15px;
+}
+
+.gl-c-v-c-b{
+	padding-bottom: 15px;
+}
+
+.gl-c-v-d-tb{
+	padding-top: 7.5px;
+	padding-bottom: 7.5px;
+}
+
+.gl-c-v-d-t{
+	padding-top: 7.5px;
+}
+
+.gl-c-v-d-b{
+	padding-bottom: 7.5px;
+}
+
+
+
+
+.gl-f-g-a{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	
+	line-height: 15px;
+}
+
+.gl-f-g-b{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	
+	line-height: 15px;
+}
+
+.gl-f-g-c{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	
+	line-height: 20px;
+}
+
+.gl-f-g-d{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	
+	line-height: 30px;
+}
+
+
+
+
+
+.gl-t-a-l{
+	text-align: left;
+}
+
+.gl-t-a-c{
+	text-align: center;
+}
+
+.gl-t-a-r{
+	text-align: right;
+}
+
+.gl-t-a-j{
+	text-align: justify;
+}
+
+
+
+
+.gl-t-c-a{
+	color: rgba(245,245,245 ,1);
+}
+
+.gl-t-c-b{
+	color: rgba(66,66,66 ,1);	
+}
+
+.gl-t-c-red{
+	color: rgba(229,57,53 ,1);
+}
+
+
+
+
+.gl-b-t-a{
+	border-top: solid 2.5px rgba(66,66,66 ,1);
+}
+
+.gl-b-t-red{
+	border-top: solid 2.5px rgba(229,57,53 ,1);
+}
+
+
+
+
+.gl-btn-a{
+	padding: 15px;
+	
+	border-radius: 0;
+	border: solid 2.5px transparent;
+	
+	background-color: transparent;
+	color: rgba(66,66,66 ,1);
+	
+	transition: 400ms;
+}
+
+.gl-btn-a:hover{
+	border-radius: 0;
+	border: solid 2.5px rgba(66,66,66 ,1);
+	
+	background-color: rgba(66,66,66 ,1);
+	color: rgba(245,245,245 ,1);
+}
+
+.gl-btn-a > .fas{
+	display: inline-block;
+}
+
+.gl-btn-a:hover > .fas{
+	display: inline-block;
+}
+
+.gl-btn-a > .gl-btn-z-l{
+	padding-left: 0px;
+}
+
+.gl-btn-a > .gl-btn-z-r{
+	padding-left: 15px;
+}
+
+.gl-btn-a:hover > .gl-btn-z-l{
+	padding-left: 0px;
+}
+
+.gl-btn-a:hover > .gl-btn-z-r{
+	padding-left: 15px;
+}
+
+
+
+
+.gl-btn-b{
+	padding: 15px;
+	
+	border-radius: 0;
+	border: solid 2.5px rgba(66,66,66 ,1);
+	
+	background-color: transparent;
+	color: rgba(66,66,66 ,1);
+	
+	transition: 400ms;
+}
+
+.gl-btn-b:hover{
+	border-radius: 0;
+	border: solid 2.5px rgba(66,66,66 ,1);
+	
+	background-color: rgba(66,66,66 ,1);
+	color: rgba(245,245,245 ,1);
+}
+
+.gl-btn-b > .fas{
+	display: none;
+}
+
+.gl-btn-b:hover > .fas{
+	display: inline-block;
+}
+
+.gl-btn-b > .gl-btn-z-l{
+	padding-left: 15px;
+}
+
+.gl-btn-b > .gl-btn-z-r{
+	padding-left: 15px;
+}
+
+.gl-btn-b:hover > .gl-btn-z-l{
+	padding-left: 0px;
+}
+
+.gl-btn-ab:hover > .gl-btn-z-r{
+	padding-left: 15px;
+}
