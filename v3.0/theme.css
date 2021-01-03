@@ -288,6 +288,23 @@
 		padding-right: 30px;
 	}
 	
+	.gl-btn-b > .gl-btn-z-l{
+	padding-left: 0px;
+}
+	
+	.gl-btn-a{
+		background-color: rgba(245,245,245 ,1);
+	}
+	
+}
+
+
+@media (max-width: 991.98px) {
+	
+	
+	.gl-btn-a{
+		background-color: rgba(245,245,245 ,1);
+	}
 }
 
 
