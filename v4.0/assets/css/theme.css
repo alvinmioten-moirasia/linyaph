@@ -88,6 +88,8 @@ p{
 
 .container-fluid{
 	padding: 90px!important;
+	padding-left: 180px!important;
+	padding-right: 180px!important;
 }
 
 .list-group-item{
@@ -527,6 +529,18 @@ p{
 }
 
 
+@media (max-width: 767.98px) {
+
+.container-fluid{
+		padding-left: 45px!important;
+		padding-right: 45px!important;
+		padding-top: 90px!important;
+		padding-bottom: 90px!important;
+	}
+
+}
+
+
 @media (max-width: 991.98px) {
 	
 	
@@ -537,11 +551,26 @@ p{
 	.left{
 		padding-left: 15px!important;
 	}
+	
+	.container-fluid{
+		padding-left: 45px!important;
+		padding-right: 45px!important;
+		padding-top: 90px!important;
+		padding-bottom: 90px!important;
+	}
+	
+	
 }
 
 
 
 @media (max-width: 1199.98px) {
+	
+	.container-fluid{
+	padding: 90px!important;
+	padding-left: 90px!important;
+	padding-right: 90px!important;
+}
 	
 	
 	.gl-f-g-a{
